@@ -9,6 +9,10 @@ This repository has the code to support CS732.
 ## How to start the project
 
 ```code
+
+cd ./client
+npm install
+
 docker build
 docker-compose up
 ```

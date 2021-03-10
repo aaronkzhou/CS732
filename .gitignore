@@ -4,7 +4,7 @@
 node_modules/*
 
 # DB nodes
-data-node/*
+data/*
 
 # testing
 /coverage
