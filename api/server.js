@@ -5,7 +5,12 @@ const User = require('./src/User.model');
 const cors = require('cors');
 
 const PORT = 8080;
+
 app.use(cors());
+
+app.get('/test', async (req, res) => {
+  res.send('Hello World!');
+});
 
 app.get('/users', async (req, res) => {
   const users = await User.find();
@@ -21,7 +26,7 @@ app.get('/user-create', async (req, res) => {
   res.send('User created \n');
 });
 
-app.listen(PORT, function() {
+app.listen(PORT, function () {
   console.log(`Listening on ${PORT}`);
 
   connectDb().then(() => {
